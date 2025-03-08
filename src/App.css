@@ -206,3 +206,17 @@ section {
   z-index: 999;
   transform: translate(-50%, -50%);
 }
+
+.dark .highlight {
+  font-weight: bold;
+  text-decoration: underline;
+  color: cyan;
+  text-shadow: 0 0 2px cyan, 0 0 3px cyan;
+}
+
+.highlight {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #2563eb;
+  text-shadow: 0 0 2px #2563eb, 0 0 3px #2563eb;
+}

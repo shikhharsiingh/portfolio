@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { Code, Database, Server, Globe, Cpu, LineChart } from 'lucide-react';
+import { color } from 'framer-motion';
 
 const Skills: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -38,67 +39,65 @@ const Skills: React.FC = () => {
       title: "Programming Languages",
       icon: <Code size={24} />,
       skills: [
-        { name: "Python", level: 95 },
-        { name: "Javascript/Typescript", level: 85 },
-        { name: "C/C++", level: 75 },
-        { name: "Dart", level: 60 }
+        { description: "→ My primary programming language is <span class='highlight'>Python</span>. I have made most of my projects in Python.", level: 95 },
+        { description: "→ However, I also have experience with <span class='highlight'>Javascript</span>. Adhering to better programming practices, I, now, write all my javascript codes in <span class='highlight'>Typescript</span>.", level: 85 },
+        { description: "→ <span class='highlight'>C and C++</span> are the languages with which I started my coding journey. I learnt all the basics of programming, pointers, memory management, data structures, and algorithms with these languages.", level: 75 },
+        { description: "→ During my internship at Datahive Labs, I learnt Flutter and developed the backend of the webapp using <span class='highlight'>Dart</span>.", level: 60 }
       ]
     },
     {
       title: "Web Development",
       icon: <Globe size={24} />,
       skills: [
-        { name: "FastAPI", level: 95 },
-        { name: "React", level: 80 },
-        { name: "Node.js", level: 80 },
-        { name: "HTML/CSS", level: 85 },
-        // { name: "Vue.js", level: 65 }
+        { description: "→ <span class='highlight'>FastAPI</span> is my go-to for any RESTful API backend.", level: 95 },
+        { description: "→ <span class='highlight'>React</span> in some form is the go-to for almost everybody for their frontend.", level: 80 },
+        { description: "→ Before I seriously dove into the development realm, I had some experience with creating backends and then, <span class='highlight'>Node.js</span> was my go-to and actually the first framework I learnt to create API backends.", level: 80 },
+        { description: "→ Without <span class='highlight'>HTML & CSS</span>, no web app can exist and I have quite some experience in this as I designed my department's website at <strong>National Institute of Technology Kurukshetra</strong> as a side project.", level: 85 }
       ]
     },
     {
       title: "Databases",
       icon: <Database size={24} />,
       skills: [
-        { name: "PostgreSQL", level: 85 },
-        { name: "MongoDB", level: 80 },
-        { name: "Neo4J", level: 80 },
-        { name: "Redis", level: 75 },
-        { name: "InfluxDB", level: 80 }
+        { description: "→ <span class='highlight'>PostgreSQL</span>", level: 85 },
+        { description: "→ <span class='highlight'>MongoDB</span>", level: 80 },
+        { description: "→ For my <strong>Grocery Tracker</strong> project, the obvious choice of database is <span class='highlight'>Neo4J</span> as Neo4J is the perfect choice for a graph type association between items.", level: 80 },
+        { description: "→ I have good experience using <span class='highlight'>Redis</span> now, mostly as a cache but also as a database for the high throughtput order-matching system.", level: 75 },
+        { description: "→ The Price tracker needs a timeseries database and <span class='highlight'>InfluxDB</span> is the perfect choice.", level: 80 }
       ]
     },
     {
       title: "DevOps & Cloud",
       icon: <Server size={24} />,
       skills: [
-        { name: "AWS", level: 75 },
-        { name: "Docker", level: 95 },
-        { name: "Kubernetes", level: 80 },
-        { name: "Github", level: 95 },
-        { name: "GCP", level: 85 }
+        { description: "→ During my internship at Datahive Labs, I worked on creating the production backend using <span class='highlight'>AWS</span> Lambda", level: 75 },
+        { description: "→ <span class='highlight'>Docker</span> is my staple development tool. If I develop anything, I will be using Docker.", level: 95 },
+        { description: "→ For production ready applications with containerized microservice architectures, <span class='highlight'>Kubernetes</span> is the absolute perfect choice.", level: 80 },
+        { description: "→ Apart from training machine learnnig models, every development cycle of mine needs the skill of <span class='highlight'>Git</span>", level: 95 },
+        { description: "→ I have been using <span class='highlight'>GCP</span> a lot, lately, for deploying my backend services and GCP's services.", level: 85 }
       ]
     },
     {
       title: "Machine Learning",
       icon: <Cpu size={24} />,
       skills: [
-        { name: "TensorFlow", level: 80 },
-        { name: "PyTorch", level: 99 },
-        { name: "Scikit-learn", level: 85 },
-        { name: "Computer Vision", level: 95 },
-        { name: "NLP", level: 90 }
+        { description: "→ I have had quite some experience with <span class='highlight'>TensorFlow</span>. During my starting years of learning machine learning, I learnt it using Tensorflow.", level: 80 },
+        { description: "→ <span class='highlight'>PyTorch</span> is my go to for all things ML.", level: 99 },
+        { description: "→ When I want to use pre-configured simple and ensemble models, <span class='highlight'>Scikit-learn</span> is my choice.", level: 85 },
+        { description: "→ <span class='highlight'>Computer Vision</span> is one of my two favourite ML researh topics. After learning the basic ML, I had huge interest in CV and I have had exprience with training the latest CV models like <strong>Swin, ConvNext, InternImage</strong>, etc.", level: 95 },
+        { description: "→ <span class='highlight'>NLP</span> is the other favorite ML research topic of mine. I have exprience finetuning <strong>GPT-2</strong> for a specific translation task. I also have research experience in prompt engineering with the latest LLM models like <strong>ChatGPT</strong> and <strong>Gemini</strong>.", level: 90 }
       ]
     },
     {
       title: "Data Analysis",
       icon: <LineChart size={24} />,
       skills: [
-        { name: "Pandas", level: 95 },
-        { name: "NumPy", level: 85 },
-        { name: "Data Visualization", level: 85 },
-        // { name: "Statistical Analysis", level: 75 },
-        // { name: "Big Data Tools", level: 70 }
+        { description: "→ For reading datasets, <span class='highlight'>Pandas</span> is my staple module. DataFrames make everything easy.", level: 95 },
+        { description: "→ When I want to do efficient math operations involving arrays and tensors, I go for <span class='highlight'>NumPy</span>.", level: 85 },
+        { description: "→ Aprt from taking a class in my masters about <span class='highlight'>Data Visualization</span>, I have very good experience in visualising data.", level: 85 }
       ]
     }
+
   ];
 
   return (
@@ -129,14 +128,7 @@ const Skills: React.FC = () => {
                 {category.skills.map((skill, skillIndex) => (
                   <div key={skillIndex}>
                     <div className="flex justify-between mb-1">
-                      <span className="text-gray-700 dark:text-gray-300">{skill.name}</span>
-                      <span className="text-gray-500 dark:text-gray-400">{skill.level}%</span>
-                    </div>
-                    <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
-                      <div
-                        className="bg-gradient-to-r from-blue-500 to-purple-500 h-2.5 rounded-full"
-                        style={{ width: `${skill.level}%`, transition: 'width 1s ease-in-out' }}
-                      ></div>
+                      <span className="text-gray-700 dark:text-gray-300" dangerouslySetInnerHTML={{ __html: skill.description }}></span>
                     </div>
                   </div>
                 ))}
