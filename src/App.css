@@ -218,5 +218,14 @@ section {
   font-weight: bold;
   text-decoration: underline;
   color: #2563eb;
-  text-shadow: 0 0 2px #2563eb, 0 0 3px #2563eb;
+  /* text-shadow: 0 0 2px #2563eb, 0 0 3px #2563eb; */
+}
+
+/* Gradient Border */
+.gradient-border {
+  background: linear-gradient(to right, var(--primary), var(--accent));
+  /* padding: 6px; */
+  /* Adjust thickness */
+  /* border-radius: 65%;
+  display: inline-block; */
 }

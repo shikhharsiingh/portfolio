@@ -33,68 +33,90 @@ const Hero: React.FC = () => {
       </div>
 
       <div className="container mx-auto px-6 py-12 md:py-24">
-        <div className="max-w-4xl">
-          <p className="text-blue-600 dark:text-blue-400 font-medium mb-4 animate-on-load fade-in">
-            Hello, I'm
-          </p>
+        <div className="flex flex-col md:flex-row items-center justify-between">
+          {/* Left Content */}
+          <div className="max-w-2xl">
+            <p className="text-blue-600 dark:text-blue-400 font-medium mb-4 animate-on-load fade-in">
+              Hello, I'm
+            </p>
 
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-on-load fade-in">
-            Shikhhar
-          </h1>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-on-load fade-in">
+              Shikhhar
+            </h1>
 
-          <h2 className="text-2xl md:text-4xl text-gray-700 dark:text-gray-300 font-medium mb-8 animate-on-load fade-in">
-            <span className="gradient-text">Computer Science</span> Graduate
-          </h2>
+            <h2 className="text-2xl md:text-4xl text-gray-700 dark:text-gray-300 font-medium mb-8 animate-on-load fade-in">
+              <span className="gradient-text">Computer Science</span> Graduate
+            </h2>
 
-          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mb-10 animate-on-load fade-in">
-            I specialize in developing software solutions and conducting research in computer science, focusing on full-stack development, machine learning, and scalable systems to build impactful technology.
-          </p>
+            <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mb-10 animate-on-load fade-in">
+              I specialize in developing software solutions and conducting research in computer science, focusing on full-stack development, machine learning, and scalable systems to build impactful technology.
+            </p>
 
-          <div className="flex flex-wrap gap-4 mb-12 animate-on-load fade-in">
-            <a href="#contact" className="btn btn-primary">
-              Get in Touch
-            </a>
-            <a href="#about" className="btn btn-outline">
-              Learn More
-            </a>
+            <div className="flex flex-wrap gap-4 mb-12 animate-on-load fade-in">
+              <a href="#contact" className="btn btn-primary">
+                Get in Touch
+              </a>
+              <a href="#about" className="btn btn-outline">
+                Learn More
+              </a>
+            </div>
+
+            <div className="flex space-x-6 animate-on-load fade-in">
+              <a
+                href="https://github.com/shikhharsiingh"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400 transition-colors duration-300"
+                aria-label="GitHub"
+              >
+                <Github size={24} />
+              </a>
+              <a
+                href="http://www.linkedin.com/in/shikhharsiingh"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400 transition-colors duration-300"
+                aria-label="LinkedIn"
+              >
+                <Linkedin size={24} />
+              </a>
+              <a
+                href="mailto:shikhharsiingh@gmail.com"
+                className="text-gray-600 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400 transition-colors duration-300"
+                aria-label="Email"
+              >
+                <Mail size={24} />
+              </a>
+              <a
+                href="https://drive.google.com/file/d/1kkBq7MlKLWrnYt7xS9sdY5KbSA77ppjd/view?usp=sharing"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400 transition-colors duration-300"
+                aria-label="Resume"
+              >
+                <FileText size={24} />
+              </a>
+            </div>
           </div>
 
-          <div className="flex space-x-6 animate-on-load fade-in">
-            <a
-              href="https://github.com/shikhharsiingh"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400 transition-colors duration-300"
-              aria-label="GitHub"
-            >
-              <Github size={24} />
-            </a>
-            <a
-              href="http://www.linkedin.com/in/shikhharsiingh"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400 transition-colors duration-300"
-              aria-label="LinkedIn"
-            >
-              <Linkedin size={24} />
-            </a>
-            <a
-              href="mailto:shikhharsiingh@gmail.com"
-              className="text-gray-600 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400 transition-colors duration-300"
-              aria-label="Email"
-            >
-              <Mail size={24} />
-            </a>
-            <a
-              href="https://drive.google.com/file/d/1kkBq7MlKLWrnYt7xS9sdY5KbSA77ppjd/view?usp=sharing"
-              // target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400 transition-colors duration-300"
-              aria-label="Resume"
-            >
-              <FileText size={24} />
-            </a>
-          </div>
+          {/* Right Image */}
+          {/* <div className="relative w-80 h-80 md:w-[24rem] md:h-[24rem] lg:w-[28rem] lg:h-[28rem] mt-12 md:mt-0">
+            <div className="rounded-full p-1 gradient-border">
+              <div className="rounded-full bg-white dark:bg-gray-900 p-1">
+                <div className="aspect-square rounded-full overflow-hidden">
+                  <img
+                    src="me.jpg"
+                    alt="Shikhhar"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="absolute -bottom-8 -right-8 w-36 h-36 bg-blue-500 dark:bg-blue-600 rounded-full -z-10"></div>
+            <div className="absolute -top-8 -left-8 w-28 h-28 bg-purple-500 dark:bg-purple-600 rounded-full -z-10"></div>
+          </div> */}
+
+
         </div>
       </div>
 

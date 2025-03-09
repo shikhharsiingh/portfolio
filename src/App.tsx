@@ -13,6 +13,7 @@ import Publications from './components/Publications';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import CustomCursor from './components/CustomCursor';
+import Blogs from './components/Blogs';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -57,6 +58,7 @@ function App() {
           <Skills />
           <Projects />
           <Publications />
+          <Blogs />
           <Contact />
         </main>
         <Footer />
